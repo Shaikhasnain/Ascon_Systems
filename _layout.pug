@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(http-equiv="X-UA-Compatible", content="IE=7")
+        meta(name="description", content="")
+        meta(name="keywords", content="")        
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Crowne Plaze | The Hotel
+        link(rel="shortcut icon", href="./images/favicon/favicon.ico", type="image/x-icon")
+        link(rel="apple-touch-icon", href="./images/favicon/apple-touch-icon.png")
+        link(rel="stylesheet", href="./css/style.css")
+        block csslinks
+    body 
+        //- Header
+        block header
+            include _header.pug 
+               
+        //- Main
+        main#main.main-content 
+            block content 
+        
+        //- Footer
+        block footer
+            include _footer.pug
+
+        //- Script 
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        script(src="./js/main.js") 
+        block jslink 
